@@ -34,7 +34,7 @@ public class FuncionarioController {
         return funcionarioService.editarFuncionario(id, funcionario);
     }
 
-    @DeleteMapping
+    @DeleteMapping("/{id}")
     public void excluirFuncionario(@PathVariable Long id) {
         funcionarioService.excluirFuncionario(id);
     }
