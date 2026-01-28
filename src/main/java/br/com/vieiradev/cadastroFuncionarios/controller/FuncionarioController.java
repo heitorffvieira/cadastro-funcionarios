@@ -29,7 +29,7 @@ public class FuncionarioController {
         return funcionarioService.cadastrarFuncionario(funcionario);
     }
 
-    @PostMapping("/{id}")
+    @PutMapping("/{id}")
     public Funcionario editarFuncionario(@PathVariable Long id, @RequestBody Funcionario funcionario) {
         return funcionarioService.editarFuncionario(id, funcionario);
     }
